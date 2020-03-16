@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Layout two</title>
+        <style>
+            div{
+                outline: 1px solid black;
+            }
+            
+            #container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin:auto;
+                height: 800px;
+                max-width: 800px;
+            }
+            
+            #blue{
+                background-color:blue;
+                grid-column: 1/4;
+                height: 200px;
+            }
+            
+            .red {
+                background-color:red;
+                height: 400px;
+            }
+            
+            #green {
+                background-color: lime;
+                grid-column: 1/4;
+                height: 200px;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="blue"></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div id="green"></div>
+        </div>
+    </body>
+</html>
