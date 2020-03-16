@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>   
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>Layout one</title>
+        <style>
+            div{
+                outline: 1px solid black;
+            }
+            
+            #container {
+                margin: auto;
+                max-width: 800px;
+            }
+            
+            #blue{
+                background-color: blue;
+                height: 200px;
+            }
+            
+            #green{
+                display: grid;
+                background-color: lime;
+                grid-template-columns: 50% 50%;
+                height: 200px;
+                padding: 20px;
+            }
+            
+            .yellow {
+                background-color: yellow;
+                margin: 20px;
+                
+            }
+            
+            #red {
+                display: grid;
+                background-color:red;
+                grid-template-columns: 50% 50%;
+                height: 400px;
+                padding: 20px;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="blue"></div>
+            <div id="green">
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+            </div>
+            <div id="red">
+                <div class="yellow"></div>
+                <div class="yellow"></div>
+            </div>
+        </div>
+    </body>
+</html>
